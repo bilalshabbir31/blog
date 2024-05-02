@@ -1,0 +1,23 @@
+AllCops:
+  Exclude:
+    - "lib/**/*"
+    - "bin/**/*"
+    - vendor/**/*.rb
+Style/RedundantFetchBlock:
+  Exclude:
+    - config/puma.rb
+Style/Documentation:
+  Enabled: false
+Metrics/BlockLength:
+  Exclude:
+    - config/environments/development.rb
+Metrics/AbcSize:
+  Enabled: false
+
+Layout/IndentationConsistency:
+  EnforcedStyle: indented_internal_methods
+
+Layout/SpaceInLambdaLiteral:
+  EnforcedStyle: require_space
+Style/ClassAndModuleChildren:
+  EnforcedStyle: compact
